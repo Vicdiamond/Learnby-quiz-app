@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Sidebar from "./_components/Sidebar";
+import Header from "./_components/Header";
+import { AppFeaturesProvider } from "./_context/AppContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,11 +17,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <AppFeaturesProvider>
+        <body className={`max-w-screen-2xl mx-auto`}>
+          <Header />
+          <div className="xl:grid-rows-1 xl:grid-cols-[auto_1fr] grid grid-rows-[1fr_auto] min-h-screen">
+            <Sidebar />
+            {children}
+          </div>
+
+          <Toaster
+            position="top-center"
+            gutter={12}
+            containerStyle={{ margin: "8px" }}
+            toastOptions={{
+              success: {
+                duration: 3000,
+              },
+              error: {
+                duration: 5000,
+              },
+              style: {
+                fontSize: "16px",
+                maxWidth: "500px",
+                padding: "16px 24px",
+              },
+            }}
+          />
+        </body>
+      </AppFeaturesProvider>
     </html>
   );
 }

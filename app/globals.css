@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "PublicSans";
+  src: url("/fonts/static/PublicSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PublicSansItalic";
+  src: url("/fonts/PublicSans-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+progress::-webkit-progress-bar {
+  border-radius: 9px;
+}
+progress::-webkit-progress-value {
+  border-radius: 8px;
+}
+
+.progress-bar-blue::-webkit-progress-value {
+  background-color: #3a7df4;
+}
+.progress-bar-blue::-webkit-progress-bar {
+  background-color: #eaf2fe;
+}
+.progress-bar-orange::-webkit-progress-value {
+  background-color: #ff8339;
+}
+.progress-bar-orange::-webkit-progress-bar {
+  background-color: #fef1eb;
+}
+
+.progress-bar-red::-webkit-progress-value {
+  background-color: #fa5352;
+}
+.progress-bar-red::-webkit-progress-bar {
+  background-color: #fdeceb;
+}
+
+.progress-bar-green::-webkit-progress-value {
+  background-color: #28c064;
+}
+.progress-bar-green::-webkit-progress-bar {
+  background-color: #e6f9ee;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PublicSans", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.font-family-italic {
+  font-family: "PublicSansItalic", sans-serif;
 }

@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Score Dashboard Application
 
-## Getting Started
+A dynamic dashboard built with **Next.js**, **React**, **Recharts**, and **Tailwind CSS** that allows users to update scores via a modal. The application dynamically reflects score changes in both a pie chart and a line chart, and provides detailed analysis for the score used.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project was developed as part of an interview task. It demonstrates the ability to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Update a score via a modal interface.
+- Dynamically reflect the updated score on both a pie chart and a line chart.
+- Display an analysis section based on the user score, which shows insights and trends.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The charts are built using **Recharts**, and the application state is managed using the **React Context API** to ensure seamless updates across components.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Score Update Modal**: Users can input a new score which is then immediately reflected across all charts and analysis.
+- **Dynamic Pie Chart**: Displays the ratio of the "actual" score to the remaining value (e.g., out of a total of 15).
+- **Dynamic Line Chart**: Plots the number of students for various score percentiles. The chart updates if the user's score is added to the dataset.
+- **Score Analysis**: Provides a detailed analysis and insights based on the score entered by the user.
+- **Responsive Design**: Built with Tailwind CSS to ensure a mobile-friendly and responsive UI.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework:** Next.js (React)
+- **State Management:** React Context API
+- **Charts:** Recharts
+- **Styling:** Tailwind CSS
+- **Other:** TypeScript
