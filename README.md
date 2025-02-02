@@ -1,6 +1,6 @@
 # Score Dashboard Application
 
-A dynamic dashboard built with **Next.js**, **React**, **Recharts**, and **Tailwind CSS** that allows users to update scores via a modal. The application dynamically reflects score changes in both a pie chart and a line chart, and provides detailed analysis for the score used.
+A dynamic dashboard built with **Next.js**, , **Recharts**, and **Tailwind CSS** that allows users to update scores via a modal. The application dynamically reflects score changes in both a pie chart and a line chart, and provides detailed analysis for the score used.
 
 ## Overview
 
