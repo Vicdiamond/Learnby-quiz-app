@@ -1,0 +1,695 @@
+{
+  "quizzes": [
+    {
+      "title": "HTML",
+      "icon": "./assets/images/icon-html.svg",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Trainer Marking Language",
+            "Hyper Text Marketing Language",
+            "Hyper Text Markup Language",
+            "Hyper Text Markup Leveler"
+          ],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the HTML elements with their correct usage.",
+          "draggableItems": ["<h1>", "<p>", "<a>", "<img>"],
+          "droppableItems": [
+            "Defines a top level heading",
+            "Represents a paragraph",
+            "Defines a hyperlink",
+            "Displays an image"
+          ],
+          "correctMatches": {
+            "<h1>": "Defines a top level heading",
+            "<p>": "Represents a paragraph",
+            "<a>": "Defines a hyperlink",
+            "<img>": "Displays an image"
+          }
+        },
+        {
+          "question": "Which of the following is the correct structure for an HTML document?",
+          "options": [
+            "<html><head></head><body></body></html>",
+            "<head><html></html><body></body></head>",
+            "<body><head></head><html></html></body>",
+            "<html><body></body><head></head></html>"
+          ],
+          "answer": "<html><head></head><body></body></html>"
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": ["<head>", "<title>", "<header>", "<top>"],
+          "answer": "<title>"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the steps to create a simple HTML document.",
+          "draggableItems": [
+            "Declare the DOCTYPE",
+            "Open the <html> tag",
+            "Add <head> section",
+            "Add <body> section",
+            "Close the <html> tag"
+          ],
+          "correctOrder": [
+            "Declare the DOCTYPE",
+            "Open the <html> tag",
+            "Add <head> section",
+            "Add <body> section",
+            "Close the <html> tag"
+          ]
+        },
+        {
+          "question": "What is the purpose of the <body> tag in HTML?",
+          "options": [
+            "It defines the document's head section.",
+            "It contains all the content such as text, images, and links.",
+            "It is used to define the main content of an HTML document.",
+            "It specifies the body of the email content in HTML."
+          ],
+          "answer": "It contains all the content such as text, images, and links."
+        },
+        {
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "options": ["<hyperlink>", "<link>", "<a>", "<href>"],
+          "answer": "<a>"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the HTML attributes with their description.",
+          "draggableItems": ["src", "href", "alt", "title"],
+          "droppableItems": [
+            "Specifies the URL for an image",
+            "Specifies the destination of a link",
+            "Provides alternative text for an image",
+            "Specifies extra information about an element"
+          ],
+          "correctMatches": {
+            "src": "Specifies the URL for an image",
+            "href": "Specifies the destination of a link",
+            "alt": "Provides alternative text for an image",
+            "title": "Specifies extra information about an element"
+          }
+        },
+        {
+          "question": "Which tag is used to display images in HTML?",
+          "options": ["<img>", "<image>", "<src>", "<pic>"],
+          "answer": "<img>"
+        },
+        {
+          "question": "What attribute is used to provide the path of an image in the <img> tag?",
+          "options": ["link", "src", "href", "url"],
+          "answer": "src"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Drag and drop the correct semantic HTML tag for the following purposes.",
+          "draggableItems": ["<header>", "<footer>", "<nav>", "<article>"],
+          "droppableItems": [
+            "Defines the header for a document or section",
+            "Defines the footer for a document or section",
+            "Contains the site navigation links",
+            "Represents a section with related content"
+          ],
+          "correctMatches": {
+            "<header>": "Defines the header for a document or section",
+            "<footer>": "Defines the footer for a document or section",
+            "<nav>": "Contains the site navigation links",
+            "<article>": "Represents a section with related content"
+          }
+        },
+        {
+          "question": "Which HTML tag is used to create an unordered list?",
+          "options": ["<ul>", "<ol>", "<list>", "<li>"],
+          "answer": "<ul>"
+        },
+        {
+          "question": "What does the <br> tag do?",
+          "options": [
+            "It breaks the text into two sections.",
+            "It creates a bold text.",
+            "It inserts a line break.",
+            "It adds a new row in a table."
+          ],
+          "answer": "It inserts a line break."
+        },
+        {
+          "question": "In HTML, what does the `fieldset` tag do?",
+          "options": [
+            "It is used to group related data in a form.",
+            "It sets the field to a fixed size.",
+            "It automatically validates the fields within a form.",
+            "It hides the fields in a form."
+          ],
+          "answer": "It is used to group related data in a form."
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the following HTML tags to create a valid document structure.",
+          "draggableItems": [
+            "<html>",
+            "<head>",
+            "<title>",
+            "</title>",
+            "</head>",
+            "<body>",
+            "</body>",
+            "</html>"
+          ],
+          "correctOrder": [
+            "<html>",
+            "<head>",
+            "<title>",
+            "</title>",
+            "</head>",
+            "<body>",
+            "</body>",
+            "</html>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "icon": "./assets/images/icon-css.svg",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Colorful Style Sheets",
+            "Computer Style Sheets",
+            "Cascading Style Sheets",
+            "Creative Style Sheets"
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the CSS selectors with their descriptions.",
+          "draggableItems": [".class", "#id", "element", "*"],
+          "droppableItems": [
+            "Selects elements by their class",
+            "Selects an element by its ID",
+            "Selects elements by their tag name",
+            "Selects all elements"
+          ],
+          "correctMatches": {
+            ".class": "Selects elements by their class",
+            "#id": "Selects an element by its ID",
+            "element": "Selects elements by their tag name",
+            "*": "Selects all elements"
+          }
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": ["styles", "style", "class", "font-style"],
+          "answer": "style"
+        },
+        {
+          "question": "How do you insert a comment in a CSS file?",
+          "options": [
+            "// this is a comment //",
+            "/* this is a comment */",
+            "-- this is a comment --",
+            "<!-- this is a comment -->"
+          ],
+          "answer": "/* this is a comment */"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the steps to link an external CSS file to an HTML document.",
+          "draggableItems": [
+            "Create a CSS file with .css extension",
+            "Place the CSS file in the project folder",
+            "Reference the correct path to the CSS file in the link tag",
+            "Link the CSS file in the <head> section using <link> tag"
+          ],
+          "correctOrder": [
+            "Create a CSS file with .css extension",
+            "Place the CSS file in the project folder",
+            "Reference the correct path to the CSS file in the link tag",
+            "Link the CSS file in the <head> section using <link> tag"
+          ]
+        },
+        {
+          "question": "Which property is used to change the background color of an element?",
+          "options": ["color", "bgcolor", "background-color", "background"],
+          "answer": "background-color"
+        },
+        {
+          "question": "How do you apply a style to all <p> elements?",
+          "options": ["p { }", ".p { }", "#p { }", "all.p { }"],
+          "answer": "p { }"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the CSS property with its function.",
+          "draggableItems": [
+            "background-color",
+            "font-family",
+            "text-transform"
+          ],
+          "droppableItems": [
+            "Sets the background color",
+            "Specifies the font of an element",
+            "Changes text capitalization"
+          ],
+          "correctMatches": {
+            "background-color": "Sets the background color",
+            "font-family": "Specifies the font of an element",
+            "text-transform": "Changes text capitalization"
+          }
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": ["font-style", "text-style", "font-family", "typeface"],
+          "answer": "font-family"
+        },
+        {
+          "question": "How do you make each word in a text start with a capital letter?",
+          "options": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "text-style: capital",
+            "font-transform: capitalize"
+          ],
+          "answer": "text-transform: capitalize"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the CSS units with their descriptions.",
+          "draggableItems": ["px", "em", "%", "rem"],
+          "droppableItems": [
+            "Absolute pixel measurement",
+            "Relative to the font-size of the element",
+            "Relative to the parent element's size",
+            "Relative to the root element's font-size"
+          ],
+          "correctMatches": {
+            "px": "Absolute pixel measurement",
+            "em": "Relative to the font-size of the element",
+            "%": "Relative to the parent element's size",
+            "rem": "Relative to the root element's font-size"
+          }
+        },
+        {
+          "question": "How do you select an element with the class name 'header'?",
+          "options": [".header", "#header", "header", "*header"],
+          "answer": ".header"
+        },
+        {
+          "question": "What is the default value of the 'position' property?",
+          "options": ["relative", "fixed", "absolute", "static"],
+          "answer": "static"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the CSS box model components from innermost to outermost.",
+          "draggableItems": ["Content", "Padding", "Border", "Margin"],
+          "correctOrder": ["Content", "Padding", "Border", "Margin"]
+        },
+        {
+          "question": "What is the purpose of the z-index property in CSS?",
+          "options": [
+            "To count the number of elements",
+            "To set the magnification level of an element",
+            "To specify the stack order of an element",
+            "To create a zoom effect"
+          ],
+          "answer": "To specify the stack order of an element"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "icon": "./assets/images/icon-js.svg",
+      "questions": [
+        {
+          "question": "Which syntax is correct to output 'Hello World' in an alert box?",
+          "options": [
+            "alertBox('Hello World');",
+            "msg('Hello World');",
+            "alert('Hello World');",
+            "msgBox('Hello World');"
+          ],
+          "answer": "alert('Hello World');"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the steps to correctly define and call a JavaScript function.",
+          "draggableItems": [
+            "Define the function",
+            "Write the function body",
+            "Return a value (if needed)",
+            "Call the function"
+          ],
+          "correctOrder": [
+            "Define the function",
+            "Write the function body",
+            "Return a value (if needed)",
+            "Call the function"
+          ]
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "call function myFunction()",
+            "call myFunction()",
+            "myFunction()",
+            "execute myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How to write an IF statement in JavaScript?",
+          "options": ["if i = 5 then", "if (i == 5)", "if i == 5", "if i = 5"],
+          "answer": "if (i == 5)"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the JavaScript array methods with their purpose.",
+          "draggableItems": ["push()", "pop()", "shift()"],
+          "droppableItems": [
+            "Adds one or more elements to the end",
+            "Removes the last element",
+            "Removes the first element"
+          ],
+          "correctMatches": {
+            "push()": "Adds one or more elements to the end",
+            "pop()": "Removes the last element",
+            "shift()": "Removes the first element"
+          }
+        },
+        {
+          "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+          "options": [
+            "if (i <> 5)",
+            "if i =! 5 then",
+            "if (i != 5)",
+            "if i not = 5"
+          ],
+          "answer": "if (i != 5)"
+        },
+        {
+          "question": "How does a FOR loop start?",
+          "options": [
+            "for (i = 0; i <= 5)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)",
+            "for (i = 0; i <= 5; i++)"
+          ],
+          "answer": "for (i = 0; i <= 5; i++)"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the JavaScript data types with an example.",
+          "draggableItems": ["String", "Number", "Boolean", "Object"],
+          "droppableItems": ["'Hello'", "42", "true/false", "{ key: 'value' }"],
+          "correctMatches": {
+            "String": "'Hello'",
+            "Number": "42",
+            "Boolean": "true/false",
+            "Object": "{ key: 'value' }"
+          }
+        },
+        {
+          "question": "How can you add a comment in a JavaScript?",
+          "options": [
+            "'This is a comment",
+            "//This is a comment",
+            "<!--This is a comment-->",
+            "/* This is a comment */"
+          ],
+          "answer": "//This is a comment"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the JavaScript operators with their description.",
+          "draggableItems": ["===", "==", "!=", "!=="],
+          "droppableItems": [
+            "Strict equality (checks type and value)",
+            "Loose equality (allows type coercion)",
+            "Loose inequality (allows type coercion)",
+            "Strict inequality (checks type and value)"
+          ],
+          "correctMatches": {
+            "===": "Strict equality (checks type and value)",
+            "==": "Loose equality (allows type coercion)",
+            "!=": "Loose inequality (allows type coercion)",
+            "!==": "Strict inequality (checks type and value)"
+          }
+        },
+        {
+          "question": "What is the correct way to write a JavaScript array?",
+          "options": [
+            "var colors = (1:'red', 2:'green', 3:'blue')",
+            "var colors = ['red', 'green', 'blue']",
+            "var colors = 'red', 'green', 'blue'",
+            "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+          ],
+          "answer": "var colors = ['red', 'green', 'blue']"
+        },
+        {
+          "question": "How do you find the number with the highest value of x and y?",
+          "options": [
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)",
+            "Math.highest(x, y)"
+          ],
+          "answer": "Math.max(x, y)"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the JavaScript error types with their typical cause.",
+          "draggableItems": [
+            "SyntaxError",
+            "ReferenceError",
+            "TypeError",
+            "RangeError"
+          ],
+          "droppableItems": [
+            "Invalid or unexpected token in code",
+            "Using an undefined variable",
+            "Operation on incompatible data type",
+            "Number out of allowable range"
+          ],
+          "correctMatches": {
+            "SyntaxError": "Invalid or unexpected token in code",
+            "ReferenceError": "Using an undefined variable",
+            "TypeError": "Operation on incompatible data type",
+            "RangeError": "Number out of allowable range"
+          }
+        },
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": ["-", "*", "=", "x"],
+          "answer": "="
+        },
+        {
+          "question": "What is the correct way to write a JavaScript object?",
+          "options": [
+            "var person = {firstName: 'John', lastName: 'Doe'};",
+            "var person = {firstName = 'John', lastName = 'Doe'};",
+            "var person = (firstName: 'John', lastName: 'Doe');",
+            "var person = (firstName = 'John', lastName = 'Doe');"
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "icon": "./assets/images/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "What does 'WCAG' stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Compliance Accessibility Guide",
+            "Web Content Accessibility Goals",
+            "Website Compliance and Accessibility Guidelines"
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the accessibility terms with their definitions.",
+          "draggableItems": ["WCAG", "ARIA", "Skip Navigation"],
+          "droppableItems": [
+            "Guidelines for web content accessibility",
+            "Attributes to improve accessibility",
+            "Links that allow users to bypass repetitive content"
+          ],
+          "correctMatches": {
+            "WCAG": "Guidelines for web content accessibility",
+            "ARIA": "Attributes to improve accessibility",
+            "Skip Navigation": "Links that allow users to bypass repetitive content"
+          }
+        },
+        {
+          "question": "Which element is used to provide alternative text for images for screen reader users?",
+          "options": [
+            "<alt>",
+            "<figcaption>",
+            "<description>",
+            "<img alt='description'>"
+          ],
+          "answer": "<img alt='description'>"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the ARIA roles with their descriptions.",
+          "draggableItems": ["banner", "navigation", "main", "contentinfo"],
+          "droppableItems": [
+            "Defines site-oriented content, such as a logo or name",
+            "Defines a section of navigation links",
+            "Defines the main content of a document",
+            "Provides information about the content, like a footer"
+          ],
+          "correctMatches": {
+            "banner": "Defines site-oriented content, such as a logo or name",
+            "navigation": "Defines a section of navigation links",
+            "main": "Defines the main content of a document",
+            "contentinfo": "Provides information about the content, like a footer"
+          }
+        },
+        {
+          "question": "What does ARIA stand for in web development?",
+          "options": [
+            "Accessible Rich Internet Applications",
+            "Advanced Responsive Internet Assistance",
+            "Accessible Responsive Internet Applications",
+            "Automated Responsive Internet Actions"
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        },
+        {
+          "question": "Which of the following is not a principle of the WCAG?",
+          "options": [
+            "Perceivable",
+            "Dependable",
+            "Operable",
+            "Understandable"
+          ],
+          "answer": "Dependable"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Arrange the steps to perform an accessibility audit with Google Lighthouse.",
+          "draggableItems": [
+            "Open Chrome DevTools",
+            "Run Lighthouse audit",
+            "Review accessibility score",
+            "Identify accessibility issues"
+          ],
+          "correctOrder": [
+            "Open Chrome DevTools",
+            "Run Lighthouse audit",
+            "Review accessibility score",
+            "Identify accessibility issues"
+          ]
+        },
+        {
+          "question": "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
+          "options": ["3:1", "4.5:1", "7:1", "2:1"],
+          "answer": "4.5:1"
+        },
+        {
+          "question": "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
+          "options": ["<div>", "<span>", "<a href='...'>", "<p>"],
+          "answer": "<a href='...'>"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the WCAG principles with their descriptions.",
+          "draggableItems": [
+            "Perceivable",
+            "Operable",
+            "Understandable",
+            "Robust"
+          ],
+          "droppableItems": [
+            "Information and user interface components must be presentable to users in ways they can perceive",
+            "User interface components and navigation must be operable",
+            "Information and the operation of user interface must be understandable",
+            "Content must be robust enough to be interpreted reliably by a wide variety of user agents"
+          ],
+          "correctMatches": {
+            "Perceivable": "Information and user interface components must be presentable to users in ways they can perceive",
+            "Operable": "User interface components and navigation must be operable",
+            "Understandable": "Information and the operation of user interface must be understandable",
+            "Robust": "Content must be robust enough to be interpreted reliably by a wide variety of user agents"
+          }
+        },
+        {
+          "question": "What is the purpose of the 'lang' attribute in an HTML page?",
+          "options": [
+            "To specify the scripting language",
+            "To define the character set",
+            "To indicate the language of the page content",
+            "To declare a language pack"
+          ],
+          "answer": "To indicate the language of the page content"
+        },
+        {
+          "type": "drag-drop",
+          "question": "Match the common accessibility issues with their potential solutions.",
+          "draggableItems": [
+            "Missing alt text",
+            "Low color contrast",
+            "Non-keyboard navigable",
+            "Improper heading structure"
+          ],
+          "droppableItems": [
+            "Add descriptive alt attributes",
+            "Increase contrast ratio",
+            "Ensure focusable elements and proper tabindex",
+            "Use semantic HTML headings in order"
+          ],
+          "correctMatches": {
+            "Missing alt text": "Add descriptive alt attributes",
+            "Low color contrast": "Increase contrast ratio",
+            "Non-keyboard navigable": "Ensure focusable elements and proper tabindex",
+            "Improper heading structure": "Use semantic HTML headings in order"
+          }
+        },
+        {
+          "question": "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+          "options": [
+            "Keyboard Accessible",
+            "Mouse Independence",
+            "Device Independence",
+            "Operable Controls"
+          ],
+          "answer": "Keyboard Accessible"
+        },
+        {
+          "question": "What is the role of 'skip navigation' links in web accessibility?",
+          "options": [
+            "To skip over primary navigation to the main content",
+            "To provide shortcuts to different sections of the website",
+            "To help users skip unwanted sections like advertisements",
+            "To bypass broken links in the navigation"
+          ],
+          "answer": "To skip over primary navigation to the main content"
+        },
+        {
+          "question": "Which of these tools can help in checking the accessibility of a website?",
+          "options": [
+            "W3C Validator",
+            "Google Lighthouse",
+            "CSS Validator",
+            "JavaScript Console"
+          ],
+          "answer": "Google Lighthouse"
+        }
+      ]
+    }
+  ]
+}

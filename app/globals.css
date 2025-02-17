@@ -3,52 +3,63 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "PublicSans";
-  src: url("/fonts/static/PublicSans-Regular.ttf") format("truetype");
+  font-family: "Rubik";
+  src: url("../public/assets/fonts/Rubik-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+.variable-font {
+  font-family: "Rubik", sans-serif;
+
+  font-style: normal;
 }
 @font-face {
-  font-family: "PublicSansItalic";
-  src: url("/fonts/PublicSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-family: "Rubik-italic";
+  src: url("../public/assets/fonts/Rubik-Italic-VariableFont_wght.ttf")
+    format("truetype");
 }
 
-progress::-webkit-progress-bar {
-  border-radius: 9px;
-}
-progress::-webkit-progress-value {
-  border-radius: 8px;
+.italic-font {
+  font-family: "Rubik-italic", sans-serif;
+
+  font-style: normal;
 }
 
-.progress-bar-blue::-webkit-progress-value {
-  background-color: #3a7df4;
-}
-.progress-bar-blue::-webkit-progress-bar {
-  background-color: #eaf2fe;
-}
-.progress-bar-orange::-webkit-progress-value {
-  background-color: #ff8339;
-}
-.progress-bar-orange::-webkit-progress-bar {
-  background-color: #fef1eb;
+@font-face {
+  font-family: "Rubik-medium";
+  src: url("../public/assets/fonts/static/Rubik-Medium.ttf") format("truetype");
 }
 
-.progress-bar-red::-webkit-progress-value {
-  background-color: #fa5352;
+.rubik-medium {
+  font-family: "Rubik-medium", sans-serif;
+
+  font-style: normal;
 }
-.progress-bar-red::-webkit-progress-bar {
-  background-color: #fdeceb;
+@font-face {
+  font-family: "Rubik-regular";
+  src: url("../public/assets/fonts/static/Rubik-Regular.ttf") format("truetype");
 }
 
-.progress-bar-green::-webkit-progress-value {
-  background-color: #28c064;
-}
-.progress-bar-green::-webkit-progress-bar {
-  background-color: #e6f9ee;
+.rubik-regular {
+  font-family: "Rubik-medium", sans-serif;
+
+  font-style: normal;
 }
 
-body {
-  font-family: "PublicSans", sans-serif;
+.progress-bar {
+  height: 16px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  -webkit-appearance: none;
+  border: 1px solid #dbdbdb;
+  border: none;
 }
-
-.font-family-italic {
-  font-family: "PublicSansItalic", sans-serif;
+::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 50px;
+  padding: 4px;
+}
+::-webkit-progress-value {
+  border-radius: 50px;
+  background-color: #a729f5;
 }
