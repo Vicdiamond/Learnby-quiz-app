@@ -14,7 +14,7 @@ function Page() {
     localStorage.setItem("points", "0");
   }
   return (
-    <div className="mt-7 mx-[24px] mb-16 lg:flex w-full lg:items-start lg:justify-between lg:px-[5rem] relative z-10">
+    <div className="mt-7 mx-[24px] mb-16 lg:flex w-full lg:items-start lg:justify-between lg:px-[5rem] relative z-10 overflow-hidden">
       <p className="text-4xl  variable-font  tracking-wide font-[50] dark:text-white text-[#313E51] mb-[40px] sm:text-[48px] w-full lg:text-5xl ">
         Quiz completed <br />
         <strong className="font-semibold">You scored...</strong>
@@ -31,7 +31,7 @@ function Page() {
             {+points}
           </p>
           <p className="dark:text-[#ABC1E1] text-[#626C7F] variable-font font-normal">
-            out of 10
+            out of 15
           </p>
         </div>
         <Button handleClick={handleClick}>Play Again</Button>

@@ -1,6 +1,5 @@
 "use client";
 import { createContext, useContext, useEffect, useReducer } from "react";
-// import data from "@/public/data.json";
 import dataWithDnd from "@/public/dataWithDnd.json";
 import { usePathname } from "next/navigation";
 
@@ -10,7 +9,6 @@ interface AppFeaturesContextType {
 }
 
 const initialState = {
-  // quizzes: data.quizzes,
   mainQuizzes: dataWithDnd.quizzes,
   subjectPicked: {},
   questionNumber: "1",
@@ -142,15 +140,10 @@ function AppFeaturesProvider({ children }: any) {
 
   const pathname = usePathname();
 
-  // console.log(dataWithDnd);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedTitle = localStorage.getItem("subjectTitle");
       if (storedTitle) {
-        // const foundSubject = data.quizzes.find(
-        //   (item) => item.title === storedTitle
-        // );
         const foundSubject = dataWithDnd.quizzes.find(
           (item) => item.title === storedTitle
         );

@@ -97,7 +97,7 @@ function OrderingStep({
         }
         ${
           !hasAnswered
-            ? "bg-white shadow-xl dark:bg-[#434c5e] text-[#313E51]"
+            ? "bg-white shadow-xl dark:bg-[#434c5e] dark:text-white text-[#313E51]"
             : ""
         }
       `}
