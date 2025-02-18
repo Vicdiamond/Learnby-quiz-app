@@ -7,6 +7,22 @@ import McqFormat from "./McqFormat";
 import { useRouter } from "next/navigation";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
+import { MultiBackend } from "react-dnd-multi-backend";
+import { TouchTransition } from "react-dnd-multi-backend";
+
+const HTML5toTouchConfig = {
+  backends: [
+    {
+      backend: HTML5Backend,
+    },
+    {
+      backend: TouchBackend,
+      preview: true,
+      transition: TouchTransition,
+    },
+  ],
+};
 
 function Page() {
   const { state, dispatch } = useAppFeatures();
@@ -57,7 +73,7 @@ function Page() {
         />
       )}
       {currentQuestion?.type && (
-        <DndProvider backend={HTML5Backend}>
+        <DndProvider backend={MultiBackend} options={HTML5toTouchConfig}>
           <DragAndDropFormat
             currentQuestion={currentQuestion}
             numOfQuestions={numOfQuestions}
