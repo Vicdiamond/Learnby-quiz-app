@@ -1,3 +1,4 @@
+import CustomDragLayer from "@/app/_components/CustomDragLayer";
 import DragAndDropMatches from "@/app/_components/DragAndDropMatches";
 import DragAndDropOrder from "@/app/_components/DragAndDropOrder";
 import { DragDropQuestion } from "@/app/_data/types";
@@ -25,6 +26,8 @@ function DragAndDropFormat({
           numOfQuestions={numOfQuestions}
         />
       )}
+
+      <CustomDragLayer />
     </div>
   );
 }
