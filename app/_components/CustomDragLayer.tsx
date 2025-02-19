@@ -41,7 +41,7 @@ export default function CustomDragLayer() {
   return (
     <div style={layerStyles}>
       <div style={getItemStyles(initialOffset, currentOffset)}>
-        <div className="bg-blue-500 text-white p-2 rounded shadow-lg">
+        <div className="dark:bg-[#434c5e] bg-white shadow-xl dark:shadow-none text-[#434c5e] dark:text-white  px-7 py-5  lg:py-8 lg:px-12  rounded-[16px] w flex justify-center items-center cursor-grab w-fit ">
           {item && item.id}
         </div>
       </div>
